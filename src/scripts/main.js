@@ -27,9 +27,18 @@ const capitalizedPlanets = planets.map(planet => {
 // console.log(capitalizedPlanets)
 
 /*
-    Use the filter method to create a new array that
-    contains planets with the letter 'e'. Use the `includes()`
+    Use the filter method to create a new array that contains planets with the letter 'e'. Use the `includes()`
     method on strings.
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
+
+const filteredPlanets = planets.filter(planet => {
+   planetArray = false
+   const e = planet.includes("e")
+   if(e) {
+       planetArray = true
+   }
+return planetArray
+})
+// console.log(filteredPlanets)
