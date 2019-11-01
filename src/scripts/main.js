@@ -8,7 +8,7 @@ const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uran
 const planetEl = document.getElementById("planets")
 
 planets.forEach(planet => {
-planetEl.innerHTML += `<div>${planet}</div>`
+    planetEl.innerHTML += `<div>${planet}</div>`
 }
 )
 
@@ -20,6 +20,11 @@ planetEl.innerHTML += `<div>${planet}</div>`
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
 
+const capitalizedPlanets = planets.map(planet => {
+    // console.log(planet)
+    return planet.charAt(0).toUpperCase() + planet.slice(1)
+})
+// console.log(capitalizedPlanets)
 
 /*
     Use the filter method to create a new array that
